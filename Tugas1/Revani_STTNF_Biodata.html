@@ -1,0 +1,229 @@
+<!-- Revani - 0110224111 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Revani</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f3f6f8;
+            color:black;
+        }
+
+        .container {
+            width: 850px;
+            max-width: 92%;
+            margin: 40px auto;
+            background: white;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.10);
+        }
+
+        .top {
+            background: palevioletred;
+            color: white;
+            padding: 35px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .foto {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center 20%;
+            border: 3px solid white;
+        }
+
+        .top h1 {
+            margin: 0 0 5px;
+            font-size: 35px;
+        }
+
+        .top p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .content {
+            padding: 30px 40px 40px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section h2 {
+            margin: 0 0 14px;
+            padding-bottom: 7px;
+            border-bottom: 2px solid pink;
+            color: rgb(254, 52, 119);
+            font-size: 21px;
+        }
+
+        .biodata {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            row-gap: 10px;
+            font-size: 15px;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+
+        .tentang {
+            font-size: 15px;
+            text-align: justify;
+            line-height: 1.7;
+        }
+
+        .list {
+            padding-left: 20px;
+            margin: 0;
+            line-height: 1.8;
+        }
+
+        .footer {
+            text-align: center;
+            background: palevioletred;
+            padding: 14px;
+            font-size: 13px;
+            color: white;
+        }
+
+        @media (max-width: 650px) {
+            .top {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            .biodata {
+                grid-template-columns: 1fr;
+                row-gap: 3px;
+                margin-bottom: 10px;
+            }
+
+            .label {
+                margin-top: 7px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .container {
+                width: 100%;
+                max-width: none;
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+            
+        <div class="top">
+            <img class="foto" src="https://i.pinimg.com/736x/3d/b9/a9/3db9a98ce03b174ae8470280e5d08ab5.jpg" alt="Foto Karina Aespa">
+            <div>
+                <h1>Revani</h1>
+                <p>Sekolah Tinggi Teknologi Terpadu Nurul Fikri</p>
+                <p>Teknik Informatika</p>
+            </div>
+        </div>
+
+        <div class="content"> 
+            <div class="section">
+                <h2>Biodata</h2>
+
+                <div class="biodata">
+                    <div class="label">Nama Lengkap:</div>
+                    <div>Revani</div>
+
+                    <div class="label">NIM:</div>
+                    <div>0110224111</div>
+
+                    <div class="label">Tanggal Lahir:</div>
+                    <div>10/11/2000</div>
+
+                    <div class="label">Jenis Kelamin:</div>
+                    <div>Perempuan</div>
+
+                    <div class="label">Domisili:</div>
+                    <div>Bogor</div>
+
+                    <div class="label">Instansi:</div>
+                    <div>Sekolah Tinggi Teknologi Terpadu Nurul Fikri</div>
+
+                    <div class="label">Program Studi:</div>
+                    <div>Teknik Informatika</div>
+
+                    <div class="label">Email:</div>
+                    <div>0110224111@student.nurulfikri.ac.id</div>
+
+                    <div class="label">Nomor Telepon:</div>
+                    <div>62812345678987</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Tentang Saya</h2>
+                <p class="tentang">Saya adalah mahasiswa Teknik Informatika di STT NF. 
+                    Saya tertarik pada pengembangan website dan aplikasi. 
+                    Selama kuliah, saya mendapatkan pengalaman melalui berbagai proyek akademik yang dikerjakan secara individu maupun bersama tim. 
+                    Saya juga tertarik untuk terus mengembangkan kemampuan di bidang teknologi informasi, khususnya di Fullstack web Developer.</p>
+            </div>
+
+            <div class="section">
+                <h2>Pendidikan</h2>
+
+                <ul class="list">
+                    <li><strong>S1 Teknik Informatika</strong> - Sedang menempuh semester 5 di STT NF</li>
+                    <li><strong>Rekayasa Perangkat Lunak</strong> - SMK Adi Sanggoro Lulus tahun 2022</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Proyek Semester 4</h2>
+                <ul class="list">
+                    <li>
+                        <strong>Fullsnack</strong> - Proyek website e-commerce snack yang dikerjakan secara berkelompok di mata kuliah Fullstack.
+                    </li>
+                    <li>
+                        <strong>FloodGuard Bekasi</strong> - Proyek yang menampilkan informasi terkait banjir di Bekasi dan fitur memprediksi cuaca dan kemungkinan banjir, yang dikerjakan secara berkelomok pada mata kuliah Data Mining.
+                    </li>
+                    <li>
+                        <strong>IndoBERT Sentiment Insight</strong> - Proyek untuk mengetahui label sentimen positif, negatif, atau netral pada text yang di input, dikerjakan berkelompok pada mata kuliah Natural Language Preprocessing.
+                    </li>
+                    <li>
+                        <strong>Recycle-in</strong> - Proyek aplikasi penjemputan sampah yang dikerjakan secara berkelompok pada mata kuliah Manajemen Proyek.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">Tugas CV - Desain Web - SIB NFA</div>
+
+    </div>
+</body>
+</html>
